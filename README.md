@@ -1,8 +1,8 @@
-# testify - Micro-Framework de Testes Modulares e Funcionais
+# micro_test - Micro-Framework de Testes Modulares e Funcionais
 
 ### Descrição
 
-testify é a evolução do Test.py, projetado para ser um micro-framework de testes modular e extensível, criado com o objetivo de atender a uma variedade de cenários de teste sem a necessidade de dependências ou configurações complexas. Inspirado pelo feedback e pela prática contínua, o testify utiliza o paradigma funcional para criar uma estrutura minimalista, de fácil adaptação e com foco em modularidade.
+micro_test é a evolução do Test.py, projetado para ser um micro-framework de testes modular e extensível, criado com o objetivo de atender a uma variedade de cenários de teste sem a necessidade de dependências ou configurações complexas. Inspirado pelo feedback e pela prática contínua, o micro_test utiliza o paradigma funcional para criar uma estrutura minimalista, de fácil adaptação e com foco em modularidade.
 
 ### Propósito
 
@@ -10,20 +10,20 @@ Após uma avaliação do Test.py, surgiu a necessidade de criar um framework mai
 
 ### Escolha pelo Paradigma Funcional
 
-A decisão de implementar o testify no paradigma funcional foi motivada pelo desejo de explorar esse paradigma em situações práticas. Além de oferecer uma oportunidade de aprendizado, a abordagem funcional favorece a modularidade e a criação de testes isolados e de fácil reutilização. Caso a solução funcional não atendesse às expectativas de extensibilidade, havia um plano de transição para POO, com padrões como Strategy e Template Method.
+A decisão de implementar o micro_test no paradigma funcional foi motivada pelo desejo de explorar esse paradigma em situações práticas. Além de oferecer uma oportunidade de aprendizado, a abordagem funcional favorece a modularidade e a criação de testes isolados e de fácil reutilização. Caso a solução funcional não atendesse às expectativas de extensibilidade, havia um plano de transição para POO, com padrões como Strategy e Template Method.
 
 ### Funcionalidades e Estrutura Modular
 
 - Funções de Teste Modulares: Cada teste é uma função independente que retorna um valor booleano e uma mensagem personalizada. Isso permite adicionar novos tipos de teste facilmente.
-- Relatório e Resumo: testify inclui funções para exibir o resultado de cada teste, uma pilha de erros (stack trace) detalhada e um resumo final.
-- Gerenciamento Centralizado de Testes: O núcleo do testify organiza e disponibiliza as informações dos testes, mantendo um baixo acoplamento entre as funções de teste e o módulo principal.
+- Relatório e Resumo: micro_test inclui funções para exibir o resultado de cada teste, uma pilha de erros (stack trace) detalhada e um resumo final.
+- Gerenciamento Centralizado de Testes: O núcleo do micro_test organiza e disponibiliza as informações dos testes, mantendo um baixo acoplamento entre as funções de teste e o módulo principal.
 - Facilidade para Adicionar Novos Testes: Novos testes podem ser adicionados como funções independentes e registradas no núcleo, mantendo o sistema simples e de fácil manutenção.
 
 ### Exemplo de Uso
 
 ```python
 # Inicialização das funções do módulo testify
-core, summary, report, failure_stack = testify()
+core, summary, report, failure_stack = micro_test()
 
 # O teste de igualdade é implicitamente chamado quando o quarto parâmetro de core é omitido.
 core(1, 1, "Testando igualdade de inteiros")
@@ -55,9 +55,9 @@ Um dos principais desafios foi a adaptação ao paradigma funcional, incluindo o
 
 ### Futuro do Projeto
 
-O testify ainda está em fase inicial e poderá ser aplicado a futuros projetos de bootcamp. Com a modularidade alcançada, o próximo passo é validar sua flexibilidade e.
+O micro_test ainda está em fase inicial e poderá ser aplicado a futuros projetos de bootcamp. Com a modularidade alcançada, o próximo passo é validar sua flexibilidade e.
 
-Pretendo continuar a evolução do testify, adicionando recursos e melhorias ao longo do tempo, mas mantendo a simplicidade, a facilidade e modularidade. Crescer mantendo a filosofia minimalista é o desafio.
+Pretendo continuar a evolução do micro_test, adicionando recursos e melhorias ao longo do tempo, mas mantendo a simplicidade, a facilidade e modularidade. Crescer mantendo a filosofia minimalista é o desafio.
 
 ## Licença
 
@@ -65,13 +65,13 @@ Este projeto está licenciado sob a licença MIT. Para mais detalhes, veja o arq
 
 ### instalação
 
-Para instalar o testify, siga estas etapas:
+Para instalar o micro_test, siga estas etapas:
 
 1. Abra o terminal
 2. Execute o comando:
 
 ```bash
-pip install testify
+pip install micro_test
 ```
 
 ---

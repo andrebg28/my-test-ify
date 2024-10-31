@@ -4,7 +4,7 @@ from typing import Callable, Any
 from tests import equals
 from exceptions import TestFunctionError
 
-def testify():
+def micro_test():
     _passed_tests_counter = 0
     _failed_tests_counter = 0
     _total_tests_counter = 0
@@ -72,7 +72,7 @@ def testify():
     return core, summary, report, failure_stack
 
 # Inicialização das funções do módulo testify
-core, summary, report, failure_stack = testify()
+core, summary, report, failure_stack = micro_test()
 
 # O teste de igualdade é implicitamente chamado quando o quarto parâmetro de core é omitido.
 core(1, 1, "Testando igualdade de inteiros")
