@@ -63,6 +63,17 @@ Pretendo continuar a evolução do testify, adicionando recursos e melhorias ao 
 
 Este projeto está licenciado sob a licença MIT. Para mais detalhes, veja o arquivo [LICENSE](./LICENSE).
 
+### instalação
+
+Para instalar o testify, siga estas etapas:
+
+1. Abra o terminal
+2. Execute o comando:
+
+```bash
+pip install testify
+```
+
 ---
 
 Desenvolvido com muito café e curiosidade! ☕😄
