@@ -1,7 +1,6 @@
+# Contribuindo com o Projeto Test-ify
 
-# Contribuindo com o Projeto Testify
-
-Obrigado por seu interesse em contribuir com o **Testify**! Este guia irá ajudá-lo a começar e a entender como podemos trabalhar juntos para melhorar este projeto.
+Obrigado por seu interesse em contribuir com o **test-ify**! Este guia irá ajudá-lo a começar e a entender como podemos trabalhar juntos para melhorar este projeto.
 
 ## Como Contribuir
 
@@ -14,7 +13,7 @@ Se você quiser contribuir, o primeiro passo é fazer um **fork** deste reposit�
 Clone o repositório que você acabou de criar:
 
 ```bash
-git clone https://github.com/seu-usuario/testify.git
+git clone https://github.com/seu-usuario/test-ify.git
 ```
 
 ### 3. Crie uma Branch para Suas Alterações
@@ -42,15 +41,15 @@ python -m unittest
 
 Utilize o padrão de commits semânticos ao fazer seus commits. Isso facilita a leitura do histórico de commits e ajuda a identificar rapidamente o que cada commit faz.
 
-| Tipo de Commit | Descrição                                                            | Exemplo                                          |
-| ---------------|----------------------------------------------------------------------|--------------------------------------------------|
-| `feat`         | Adiciona uma nova funcionalidade ao projeto.                         | `feat: adicionar suporte para testes numéricos`  |
-| `fix`          | Corrige um bug ou problema no projeto.                               | `fix: corrigir erro na função de ataque`         |
-| `docs`         | Atualiza ou cria documentação.                                       | `docs: atualizar README com novas instruções`    |
-| `style`        | Modifica apenas a aparência ou formatação, sem mudar a funcionalidade.| `style: ajustar indentação no arquivo principal` |
-| `refactor`     | Refatora o código sem alterar a funcionalidade.                      | `refactor: reorganizar lógica de ataques`        |
-| `test`         | Adiciona ou modifica testes no projeto.                              | `test: adicionar testes para classe Hero`        |
-| `chore`        | Atualiza tarefas de build ou configurações.                          | `chore: atualizar dependências`                  |
+| Tipo de Commit | Descrição                                                              | Exemplo                                          |
+| -------------- | ---------------------------------------------------------------------- | ------------------------------------------------ |
+| `feat`         | Adiciona uma nova funcionalidade ao projeto.                           | `feat: adicionar suporte para testes numéricos`  |
+| `fix`          | Corrige um bug ou problema no projeto.                                 | `fix: corrigir erro na função de ataque`         |
+| `docs`         | Atualiza ou cria documentação.                                         | `docs: atualizar README com novas instruções`    |
+| `style`        | Modifica apenas a aparência ou formatação, sem mudar a funcionalidade. | `style: ajustar indentação no arquivo principal` |
+| `refactor`     | Refatora o código sem alterar a funcionalidade.                        | `refactor: reorganizar lógica de ataques`        |
+| `test`         | Adiciona ou modifica testes no projeto.                                | `test: adicionar testes para classe Hero`        |
+| `chore`        | Atualiza tarefas de build ou configurações.                            | `chore: atualizar dependências`                  |
 
 ### 7. Envie Suas Alterações
 
@@ -78,4 +77,4 @@ Ao contribuir, por favor, mantenha uma postura respeitosa e amigável. Todos os 
 
 ---
 
-Obrigado novamente por contribuir com o **Testify**! Seu apoio é muito importante.
+Obrigado novamente por contribuir com o **test-ify**! Seu apoio é muito importante.

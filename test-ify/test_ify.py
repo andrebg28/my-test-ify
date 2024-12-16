@@ -1,10 +1,10 @@
 
 from utils import *
 from typing import Callable, Any
-from tests import equals
+from assertive import equals
 from exceptions import TestFunctionError
 
-def micro_test():
+def test_ify():
     _passed_tests_counter = 0
     _failed_tests_counter = 0
     _total_tests_counter = 0

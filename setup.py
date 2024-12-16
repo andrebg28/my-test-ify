@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="micro_test",
+    name="test-ify",
     version="0.0.1",
     description="Micro-framework de testes unitários minimalista",
-    long_description=open("README.md").read(),
+    long_description=open("README.md","r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     author="Andre Luiz",
     author_email="andreluizmb28@gmail.com",
