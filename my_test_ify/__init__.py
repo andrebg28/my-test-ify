@@ -1,8 +1,9 @@
-from .assertive import equals, not_equals, greater_than, less_than, raises_exception
+#__init__.py
+from .assertive import (equals, greater_than, less_than, not_equals,
+                        raises_exception)
 from .exceptions import InvalidTypeError, TestFunctionError
-from .test_ify import test_ify
+from .my_test_ify import my_test_ify
 
-# Opcional: Definir __all__ para exportar explicitamente
 __all__ = [
     "equals",
     "not_equals",
@@ -11,5 +12,5 @@ __all__ = [
     "raises_exception",
     "InvalidTypeError",
     "TestFunctionError",
-    "test_ify"
+    "my_test_ify"
 ]

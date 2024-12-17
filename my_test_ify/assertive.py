@@ -1,6 +1,8 @@
-from utils import *
-from typing import Callable, Any, Type
-from exceptions import InvalidTypeError
+from typing import Any, Callable, Type
+
+from .exceptions import InvalidTypeError
+from .utils import *
+
 
 def equals[T](tested: T, expected: T, id_test: int, description: str="") -> tuple[bool, str, str|None]:
     if type(expected) != type(tested):

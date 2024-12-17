@@ -1,6 +1,6 @@
-# Contribuindo com o Projeto Test-ify
+# Contribuindo com o Projeto my-test-ify
 
-Obrigado por seu interesse em contribuir com o **test-ify**! Este guia irá ajudá-lo a começar e a entender como podemos trabalhar juntos para melhorar este projeto.
+Obrigado por seu interesse em contribuir com o **my-test-ify**! Este guia irá ajudá-lo a começar e a entender como podemos trabalhar juntos para melhorar este projeto.
 
 ## Como Contribuir
 
@@ -13,7 +13,7 @@ Se você quiser contribuir, o primeiro passo é fazer um **fork** deste reposit�
 Clone o repositório que você acabou de criar:
 
 ```bash
-git clone https://github.com/seu-usuario/test-ify.git
+git clone https://github.com/seu-usuario/my-test-ify.git
 ```
 
 ### 3. Crie uma Branch para Suas Alterações
@@ -77,4 +77,4 @@ Ao contribuir, por favor, mantenha uma postura respeitosa e amigável. Todos os 
 
 ---
 
-Obrigado novamente por contribuir com o **test-ify**! Seu apoio é muito importante.
+Obrigado novamente por contribuir com o **my-test-ify**! Seu apoio é muito importante.

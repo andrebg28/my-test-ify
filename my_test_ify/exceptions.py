@@ -1,5 +1,7 @@
 from typing import Any
-from utils import GREEN, RED, YELLOW, RESET
+
+from .utils import GREEN, RED, RESET, YELLOW
+
 
 class InvalidTypeError(Exception):
     """Exceção lançada quando um tipo incorreto é passado para uma função."""

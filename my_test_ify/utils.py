@@ -19,16 +19,16 @@ def get_summary(_total_tests_counter: int, _passed_tests_counter: int, _failed_t
     return msg
     
 
-def error_location():
+def error_location() -> tuple[str, str]:
     stack = inspect.stack()
     frame = stack[-1]
-    path = re.split(r"[\\/]", frame.filename)
+    list_path: list[str] = re.split(r"[\\/]", frame.filename)
     code_context = frame.code_context[0].strip() if frame.code_context else ""
-    file = path.pop()
+    file: str = list_path.pop()
     if os.name == 'nt':
-        path = "\\".join(path) + "\\"
+        path: str = "\\".join(list_path) + "\\"
     elif os.name == 'posix':
-        path = "/".join(path) + "/"
+        path: str = "/".join(path) + "/"
 
 
     path = f"{YELLOW}Method '{code_context}' was called {RED}on line {frame.lineno}{YELLOW} in file '{path}{RED}{file}'."

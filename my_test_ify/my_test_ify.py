@@ -1,10 +1,21 @@
 
-from utils import *
-from typing import Callable, Any
-from tests import equals
-from exceptions import TestFunctionError
+from dataclasses import dataclass
+from typing import Any, Callable
 
-def micro_test():
+from .assertive import equals
+from .exceptions import TestFunctionError
+from .utils import *
+
+
+@dataclass (init = False)
+class Report:
+    def __init__(self, summary: Callable[...,str], report: Callable[...,str], failure_stack: Callable[...,list[str]]):
+        self.summary = summary
+        self.report = report
+        self.failure_stack = failure_stack
+        
+
+def my_test_ify() -> tuple[Callable[...,Any],Report]:
     _passed_tests_counter = 0
     _failed_tests_counter = 0
     _total_tests_counter = 0
@@ -33,7 +44,7 @@ def micro_test():
         test_function: Callable[..., Any] = equals,
         *args: Any,
         **kwargs: Any
-    ):
+    ) -> None:
         if not callable(test_function):
             raise TestFunctionError("The provided test function is not a valid function.")
 
@@ -65,33 +76,9 @@ def micro_test():
         test_function: Callable[..., Any] = equals,
         *args:list[Any], 
         **kwargs:dict[str,Any]
-    ):
+    ) -> None:
 
         run_test(expected, result, description, test_function, *args, **kwargs)
     
-    return core, summary, report, failure_stack
+    return core, Report(summary, report, failure_stack)
 
-# Inicialização das funções do módulo testify
-core, summary, report, failure_stack = micro_test()
-
-# O teste de igualdade é implicitamente chamado quando o quarto parâmetro de core é omitido.
-core(1, 1, "Testando igualdade de inteiros")
-core("Hello", "Hello", "Testando igualdade de strings")
-core(4.0, 4.0, "Testando igualdade de números com ponto flutuante")
-
-from tests import not_equals, greater_than, less_than, raises_exception
-
-core(1, 3, "Testando desigualdade de inteiros", not_equals)
-core(3, 2, "Testando se é maior que", greater_than)
-core(2, 3, "Testando se é menor que", less_than)
-
-def func (a: int):
-    raise TestFunctionError("Teste de exceção")
-
-# O quinto parâmetro de core é uma lista de argumentos que são passados pela função testada. Neste caso, a função `func`.
-core(TestFunctionError, func, "test8", raises_exception, [1])
-
-
-print(report()) # Imprime o relatório de testes
-print(failure_stack()[0]) # Imprime o stack da primeira falha, caso haja falhas. Se não houver falhas, imprime "No failures".
-print(summary()) # Imprime o resumo dos testes
