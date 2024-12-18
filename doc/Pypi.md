@@ -146,7 +146,6 @@ pip install my-test-ify
 **Dicas importantes:**
 
 - **Versionamento:** Siga as convenções de versionamento semântico (SemVer) ao atribuir versões ao seu pacote (por exemplo, `MAJOR.MINOR.PATCH`).
-- **`requirements.txt` vs `setup.cfg`:** Embora você possa usar um arquivo `requirements.txt` para listar as dependências, é recomendável listá-las na seção `install_requires` do seu arquivo `setup.cfg` para dependências em tempo de execução. Use o `requirements.txt` apenas para dependências de desenvolvimento.
 - **Ambientes Virtuais:** Sempre use ambientes virtuais para desenvolver e testar seus pacotes Python. Isso ajuda a evitar conflitos entre as dependências do seu projeto e outros projetos no seu sistema.
 - **Testes:** Escrever testes é crucial para garantir que seu pacote funcione como esperado e para evitar regressões quando você fizer alterações no futuro.
 - **Documentação:** Uma boa documentação é essencial para que outras pessoas possam usar seu pacote facilmente.
