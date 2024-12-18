@@ -28,7 +28,7 @@ def error_location() -> tuple[str, str]:
     if os.name == 'nt':
         path: str = "\\".join(list_path) + "\\"
     elif os.name == 'posix':
-        path: str = "/".join(path) + "/"
+        path: str = "/".join(list_path) + "/"
 
 
     path = f"{YELLOW}Method '{code_context}' was called {RED}on line {frame.lineno}{YELLOW} in file '{path}{RED}{file}'."

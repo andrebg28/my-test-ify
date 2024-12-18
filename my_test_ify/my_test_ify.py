@@ -15,7 +15,19 @@ class Report:
         self.failure_stack = failure_stack
         
 
-def my_test_ify() -> tuple[Callable[...,Any],Report]:
+def my_test_ify(stop_on_failure:bool = False) -> tuple[Callable[...,Any],Report]:
+    """_summary_
+
+    Args:
+        stop_on_failure (bool, optional): _description_. 
+        Defaults to False, if True, stops running tests as soon as the first error occurs.
+
+    Raises:
+        TestFunctionError: _description_
+
+    Returns:
+        tuple[Callable[...,Any],Report]: _description_
+    """
     _passed_tests_counter = 0
     _failed_tests_counter = 0
     _total_tests_counter = 0
@@ -55,6 +67,12 @@ def my_test_ify() -> tuple[Callable[...,Any],Report]:
         nonlocal _failure_message
         nonlocal _stacks
         
+        if stop_on_failure == True and _failed_tests_counter > 0:
+            print(report())
+            print(failure_stack()[0])
+            print(summary())
+            exit()
+        
         _total_tests_counter += 1
         
         passed, msg, stack = test_function(expected, result, _total_tests_counter, description, *args, **kwargs)
@@ -79,6 +97,7 @@ def my_test_ify() -> tuple[Callable[...,Any],Report]:
     ) -> None:
 
         run_test(expected, result, description, test_function, *args, **kwargs)
-    
+
+            
     return core, Report(summary, report, failure_stack)
 
