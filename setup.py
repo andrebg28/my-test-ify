@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="my-test-ify",
-    version="0.0.1",
+    version="0.0.2",
     description="Micro framework de testes unitários minimalista",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",

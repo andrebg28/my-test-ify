@@ -25,6 +25,8 @@ core(TestFunctionError, func, "test8", raises_exception, {'a':1}) # O ultimo par
 core(TestFunctionError, func, "test8", raises_exception) # O ultimo parâmetro é um dicionario de argumentos que são passados pela função testada.
 
 
-print(report.report()) # Imprime o relatório de testes
-print(report.failure_stack()[0]) # Imprime o stack da primeira falha, caso haja falhas. Se não houver falhas, imprime "No failures".
-print(report.summary()) # Imprime o resumo dos testes
+# print(report.report()) # Imprime o relatório de testes
+# print(report.failure_stack()[0]) # Imprime o stack da primeira falha, caso haja falhas. Se não houver falhas, imprime "No failures".
+# print(report.summary()) # Imprime o resumo dos testes
+
+report.print()

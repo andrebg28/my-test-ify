@@ -14,6 +14,18 @@ class Report:
         self.report = report
         self.failure_stack = failure_stack
         
+    def print(self):
+        print(self.report())
+        print(self.failure_stack()[0])
+        print(len(self.failure_stack()))
+        print(self.summary())
+        
+    def print_full_report(self):
+        print(self.report())
+        for failure in self.failure_stack():
+            print(failure)
+        print(self.summary())
+        
 
 def my_test_ify(stop_on_failure:bool = False) -> tuple[Callable[...,Any],Report]:
     """_summary_
