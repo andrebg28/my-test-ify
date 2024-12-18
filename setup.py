@@ -16,4 +16,13 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.12",
+    install_requires=[],  # Este projeto não tem dependências externas
+    extras_require={
+        "dev": [
+            # Dependências de desenvolvimento
+            "flake8>=7.1.1",
+            "black>=24.1",
+            "mypy>=1.13.0",
+        ]
+    },
 )

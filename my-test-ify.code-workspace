@@ -1,0 +1,18 @@
+{
+	
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"indenticator.showHover": true,
+		"indenticator.hover.peekBack": 1,
+		"indenticator.inner.showIndentGuide":true,   
+		"indenticator.showIndentGuide": true,
+		/* Color of the indent marker for dark themes */
+		"indenticator.color.dark": "#888",
+		/* Color of the indent marker for light themes */
+		"indenticator.color.light": "#999",
+	}
+}

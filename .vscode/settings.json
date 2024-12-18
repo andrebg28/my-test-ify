@@ -1,4 +1,5 @@
-{                    // Formatar ao salvar
+{   
+  // Formatar ao salvar
   "editor.formatOnSave": true,
   "black-formatter.args": ["--line-length", "88"],
 

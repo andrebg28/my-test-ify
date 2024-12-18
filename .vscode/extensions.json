@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "python.indenticator",
+    //"ms-toolsai.jupyter",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "ms-python.isort",
+    "mgesbert.python-path",
+    "Gruntfuggly.todo-tree",
+    "PKief.material-icon-theme"
+  ]
+}
